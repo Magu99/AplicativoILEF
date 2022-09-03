@@ -4,15 +4,16 @@
       <NavBar />
     </div>
     <div>
-      <EscolhaDificuldade />
+      <EscolhaTeste />
     </div>
   </div>
 </template>
 <script>
 import NavBar from "@/components/NavigationBar.vue";
-import EscolhaDificuldade from "@/components/EscolhaDificuldade.vue";
+import EscolhaTeste from "@/components/EscolhaTeste.vue";
+
 export default {
-  components: { NavBar, EscolhaDificuldade },
+  components: { NavBar, EscolhaTeste},
 };
 </script>
 

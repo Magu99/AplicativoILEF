@@ -2,12 +2,11 @@
 
 <template>
   <div>
-    <h3>Qual nível?</h3>
-    <ol>
-      <li v-for="(i, v) in lista" :key="i">
-        <router-link>{{ toString(i) + " " + v }}</router-link>
-      </li>
-    </ol>
+    <h3>Qual tipo de teste?</h3>
+    <div id="button-wrapper">
+      <button id="cadastro">Leitura</button>
+      <button id="inciar">Palavras</button>
+    </div>
   </div>
 </template>
 
@@ -23,4 +22,23 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+h3 {
+  text-align: center;
+}
+
+#button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+button {
+  margin-top: 8em;
+  display: block;
+  height: 10em;
+  width: 20em;
+  font-size: large;
+}
+</style>

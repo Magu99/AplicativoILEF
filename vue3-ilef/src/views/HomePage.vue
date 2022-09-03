@@ -30,10 +30,15 @@ export default {
 }
 
 button {
-  padding: 4em;
-  display: inline;
+  margin-top: 8em;
+  display: block;
   height: 10em;
   width: 20em;
+  font-size: large;
 }
 
+h1{
+  text-align: center;
+  padding-top: 2em;
+}
 </style>
