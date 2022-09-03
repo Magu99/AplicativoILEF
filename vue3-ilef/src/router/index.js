@@ -1,40 +1,47 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import { createRouter, createWebHashHistory } from "vue-router";
+import HomePage from "@/views/HomePage.vue"
+import SobreILEF from "@/views/SobreILEF.vue"
+import PaginaCadastro from "@/views/PaginaCadastro.vue"
+import TestePalavras from "@/views/TestePalavras.vue"
+import TestePerguntas from "@/views/TestePerguntas.vue"
+import PaginaDificuldade from "@/views/PaginaDificuldade.vue"
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: HomeView
+    path: "/",
+    name: "home",
+    component: HomePage,
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    path: "/about",
+    name: "about",
+    component: SobreILEF,
   },
   {
-    path: '/',
-    name: 'cadastro',
-    component: Cadastro
+    path: "/cadastro",
+    name: "cadastro",
+    component: PaginaCadastro,
   },
   {
-    path: '/',
-    name: 'lista',
-    component: Lista
+    path: "/teste-perguntas",
+    name: "TestePerguntas",
+    component: TestePerguntas,
   },
   {
-    path: '/',
-    name: 'fluxo',
-    component: Fluxo
+    path: "/teste-palavras",
+    name: "TestePalavras",
+    component: TestePalavras,
   },
-]
+  {
+    path: "/dificuldade",
+    name: "dificuldade",
+    component: PaginaDificuldade,
+  },
+];
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
