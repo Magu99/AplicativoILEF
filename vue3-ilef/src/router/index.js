@@ -2,9 +2,8 @@ import { createRouter, createWebHashHistory } from "vue-router";
 import HomePage from "@/views/HomePage.vue"
 import SobreILEF from "@/views/SobreILEF.vue"
 import PaginaCadastro from "@/views/PaginaCadastro.vue"
-import TestePalavras from "@/views/TestePalavras.vue"
-import TestePerguntas from "@/views/TestePerguntas.vue"
-import PaginaDificuldade from "@/views/PaginaDificuldade.vue"
+import PaginaTeste from "@/views/PaginaTeste.vue"
+import PaginaConfigurarTeste from "@/views/PaginaConfigurarTeste.vue"
 
 const routes = [
   {
@@ -23,19 +22,14 @@ const routes = [
     component: PaginaCadastro,
   },
   {
-    path: "/teste-perguntas",
-    name: "TestePerguntas",
-    component: TestePerguntas,
+    path: "/teste",
+    name: "teste",
+    component: PaginaTeste,
   },
   {
-    path: "/teste-palavras",
-    name: "TestePalavras",
-    component: TestePalavras,
-  },
-  {
-    path: "/dificuldade",
-    name: "dificuldade",
-    component: PaginaDificuldade,
+    path: "/configurar-teste",
+    name: "configurar-teste",
+    component: PaginaConfigurarTeste,
   },
 ];
 

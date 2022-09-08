@@ -4,8 +4,8 @@
   <div>
     <h3>Qual tipo de teste?</h3>
     <div id="button-wrapper">
-      <button id="cadastro">Leitura</button>
-      <button id="inciar">Palavras</button>
+      <button id="leitura" @click="escolheuLeitura()">Leitura</button>
+      <button id="palavras" @click="escolheuPalavras()">Palavras</button>
     </div>
   </div>
 </template>
@@ -14,10 +14,13 @@
 export default {
   name: "EscolhaTeste",
   props: {},
-  data() {
-    return {
-      lista: [],
-    };
+  methods: {
+    escolheuLeitura() {
+      // setar o tipo de teste como Leitura
+    },
+    escolheuPalavras() {
+      // setar o tipo do teste como palavras
+    },
   },
 };
 </script>

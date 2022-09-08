@@ -5,9 +5,13 @@
       <NavigationBar />
     </div>
     <div id="button-wrapper">
-      <router-link to="/cadastro"><button id="cadastro">Cadastro</button></router-link>
+      <router-link to="/cadastro"><button id="cadastro">
+        Cadastro
+      </button></router-link>
 
-      <router-link to="/dificuldade"><button id="inciar">Começar Atividades</button></router-link>
+      <router-link to="/configurar-teste"><button id="inciar">
+        Começar Atividades
+      </button></router-link>
     </div>
   </div>
 </template>

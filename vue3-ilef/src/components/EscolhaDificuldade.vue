@@ -3,10 +3,8 @@
 <template>
   <div id="list-wrapper">
     <ul>
-      <li v-for="(v, i) in lista" :key="i">
-        <router-link to="">
+      <li v-for="(v, i) in lista" :key="i" @click="setDificuldade()">
           {{ v }}
-        </router-link>
       </li>
     </ul>
   </div>
@@ -15,6 +13,7 @@
 <script>
 export default {
   name: "EscolhaDificuldade",
+  props: { },
   data() {
     return {
       lista: [
@@ -28,7 +27,13 @@ export default {
       ],
     };
   },
-  components: {},
+  methods: {
+    setDificuldade($evento){
+      // setar dificuldade ao clicar no elemento da lista
+      console.log($evento);
+    }
+  },
+  computed: {}
 };
 </script>
 
