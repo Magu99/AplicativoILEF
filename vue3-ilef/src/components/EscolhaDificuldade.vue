@@ -2,9 +2,13 @@
 
 <template>
   <div id="list-wrapper">
-    <ol>
-      <li v-for="(v, i) in lista" :key="i">{{ v }}</li>
-    </ol>
+    <ul>
+      <li v-for="(v, i) in lista" :key="i">
+        <router-link to="">
+          {{ v }}
+        </router-link>
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -35,10 +39,11 @@ export default {
   justify-content: center;
 }
 
-ol {
+ul {
   align-items: center;
   justify-content: center;
   align-self: center;
+  /* Remove bullet points */
 }
 
 li {

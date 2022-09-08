@@ -1,6 +1,6 @@
 <template>
   <div id="form-wrapper">
-    <form action="POST">
+    <form action="POST"> 
       <label for="nome">Nome: </label>
       <input type="text" id="nome" />
       <label for="dataDeNascimento">Data de Nascimento: </label>
