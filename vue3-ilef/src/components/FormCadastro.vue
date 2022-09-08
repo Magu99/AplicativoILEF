@@ -34,9 +34,12 @@ export default {
 label {
   display: block;
   align-self: center;
+  margin: 5px;
 }
 
 input {
   display: block;
+  margin: 5px;
+  margin-bottom: 10px;
 }
 </style>

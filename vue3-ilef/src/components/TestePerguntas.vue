@@ -1,8 +1,10 @@
 <template>
   <div @click="mudarPergunta()">
-    <transition>
+    <!-- <transition> -->
       <h4>{{ perguntas[0] }}</h4>
-    </transition>
+      <h4>{{ perguntas[1] }}</h4>
+      <h4>{{ perguntas[2] }}</h4>
+    <!-- </transition> -->
   </div>
 </template>
 
@@ -13,7 +15,7 @@ export default {
   data() {
     return {
       dificuldadeEscolhida: this.dificuldade,
-      perguntas: ["perguntei.", "dois"],
+      perguntas: ["perguntei.", "dois", "pergunta três"],
       perguntaAtual: 0,
     };
   },

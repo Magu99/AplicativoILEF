@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Bem vindos ao ILEF :)</h1>
+    <TituloILEF />
     <div>
       <NavigationBar />
     </div>
@@ -18,10 +18,11 @@
 
 <script>
 import NavigationBar from "@/components/NavigationBar.vue";
+import TituloILEF from "@/components/TituloILEF.vue";
 export default {
   name: "HomePage",
   props: {},
-  components: { NavigationBar },
+  components: { NavigationBar, TituloILEF },
 };
 </script>
 

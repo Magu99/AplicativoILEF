@@ -12,7 +12,7 @@
 <script>
 export default {
   name: "TestePalavras",
-  props: { tipo: String, dificuldade: String},
+  props: { tipo: String, dificuldade: String },
   data() {
     return {
       lista: [

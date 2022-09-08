@@ -1,7 +1,8 @@
 <template>
   <div>
-    <EscolhaDificuldade v-if="!dificuldade" />
-    <EscolhaTeste v-if="dificuldade" />
+    <TituloILEF />
+    <EscolhaDificuldade v-if="dificuldade === ''" />
+    <EscolhaTeste v-if="dificuldade !== ''" />
     <div id="button-containter">
       <button v-if="dificuldade && teste">
         <router-link to="/teste"> Configuração Concluída </router-link>
@@ -14,10 +15,11 @@
 <script>
 import EscolhaDificuldade from "@/components/EscolhaDificuldade.vue";
 import EscolhaTeste from "@/components/EscolhaTeste.vue";
+import TituloILEF from "@/components/TituloILEF.vue";
 export default {
   name: "PaginaConfigurarTeste",
   props: {},
-  components: { EscolhaDificuldade, EscolhaTeste },
+  components: { EscolhaDificuldade, EscolhaTeste, TituloILEF },
   data() {
     return {
       tipo: "",

@@ -1,19 +1,17 @@
 <!-- conectar cada item da lista com uma parametros pré-determinados do template PáginaFluxo -->
 
 <template>
-  <div id="list-wrapper">
-    <ul>
-      <li v-for="(v, i) in lista" :key="i" @click="setDificuldade()">
-          {{ v }}
-      </li>
-    </ul>
+  <div id="wrapper">
+    <button v-for="(v, i) in lista" :key="i" @click="setDificuldade()">
+      {{ v }}
+    </button>
   </div>
 </template>
 
 <script>
 export default {
   name: "EscolhaDificuldade",
-  props: { },
+  props: {},
   data() {
     return {
       lista: [
@@ -28,32 +26,30 @@ export default {
     };
   },
   methods: {
-    setDificuldade($evento){
+    setDificuldade() {
       // setar dificuldade ao clicar no elemento da lista
-      console.log($evento);
-    }
+    },
   },
-  computed: {}
+  computed: {},
 };
 </script>
 
 <style scoped>
-#list-wrapper {
+#wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  margin-top: 3em;
+  border-style: 1px;
+  border: 2px;
 }
 
-ul {
-  align-items: center;
-  justify-content: center;
-  align-self: center;
-  /* Remove bullet points */
-}
-
-li {
-  padding: 10px;
+button {
   border-color: aquamarine;
   align-self: center;
+  width: 14em;
+  margin: 0.5em;
+  font-size: large;
 }
 </style>

@@ -1,5 +1,6 @@
 <template>
     <div>
+      <TituloILEF />
       <NavigationBar/>
       <p><b>Desenvolvido por:</b> Matheus Wagner, Elizeu & Cleber</p>
       <p><b>Artigo em:</b> permalink do artigo original</p>
@@ -11,10 +12,11 @@
   
   <script>
 import NavigationBar from '@/components/NavigationBar.vue';
+import TituloILEF from '@/components/TituloILEF.vue';
   export default {
     name: "sobreILEF",
     props: {},
-    components: { NavigationBar }
+    components: { NavigationBar, TituloILEF }
 };
   </script>
   
