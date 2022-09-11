@@ -1,8 +1,8 @@
 <template>
   <div>
     <TituloILEF />
-    <TestePalavras tipo="" dificuldade=""/>
-    <TestePerguntas tipo="" dificuldade=""/>
+    <TestePalavras teste="" dificuldade=""/>
+    <TestePerguntas teste="" dificuldade=""/>
   </div>
 </template>
 
@@ -17,4 +17,7 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+  /* Criar transições entre Teste de Palavras e teste de Perguntas*/
+
+</style>

@@ -2,13 +2,14 @@
 
 <template>
   <div id="wrapper">
-    <button v-for="(v, i) in lista" :key="i" @click="setDificuldade()">
+    <button v-for="(v, i) in lista" :key="i" @click="setDificuldade(v)">
       {{ v }}
     </button>
   </div>
 </template>
 
 <script>
+  import { store } from '@/store/storage';
 export default {
   name: "EscolhaDificuldade",
   props: {},
@@ -23,11 +24,12 @@ export default {
         "4º Ano",
         "5º Ano",
       ],
+      store
     };
   },
   methods: {
-    setDificuldade() {
-      // setar dificuldade ao clicar no elemento da lista
+    setDificuldade(v) {
+      this.store.dificuldade = v;
     },
   },
   computed: {},
@@ -40,7 +42,7 @@ export default {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 3em;
+  margin-top: 2em;
   border-style: 1px;
   border: 2px;
 }
@@ -48,6 +50,7 @@ export default {
 button {
   border-color: aquamarine;
   align-self: center;
+  justify-content: center;
   width: 14em;
   margin: 0.5em;
   font-size: large;

@@ -4,22 +4,24 @@
   <div>
     <h3>Qual tipo de teste?</h3>
     <div id="button-wrapper">
-      <button id="leitura" @click="escolheuLeitura()">Leitura</button>
-      <button id="palavras" @click="escolheuPalavras()">Palavras</button>
+      <button id="leitura" @click="setTeste('Leitura')">Leitura</button>
+      <button id="palavras" @click="setTeste('Palavras')">Palavras</button>
     </div>
   </div>
 </template>
 
 <script>
+  import { store } from '@/store/storage';
 export default {
   name: "EscolhaTeste",
-  props: {},
+  data() {
+    return {
+      store,
+    }
+  },
   methods: {
-    escolheuLeitura() {
-      // setar o tipo de teste como Leitura
-    },
-    escolheuPalavras() {
-      // setar o tipo do teste como palavras
+    setTeste(value) {
+      this.store.tipo = value;
     },
   },
 };
@@ -39,6 +41,7 @@ h3 {
 
 button {
   margin-top: 8em;
+  margin-bottom: 8em;
   display: block;
   height: 10em;
   width: 20em;

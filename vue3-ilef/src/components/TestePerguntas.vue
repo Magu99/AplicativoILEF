@@ -1,27 +1,27 @@
 <template>
-  <div @click="mudarPergunta()">
+  <div @click="mudarPergunta(1)">
     <!-- <transition> -->
-      <h4>{{ perguntas[0] }}</h4>
-      <h4>{{ perguntas[1] }}</h4>
-      <h4>{{ perguntas[2] }}</h4>
+      <h4>{{ perguntas[perguntaAtual] }}</h4>
     <!-- </transition> -->
   </div>
 </template>
 
 <script>
+import { store } from '@/store/storage';
+
 export default {
   name: "TestePerguntas",
-  props: { tipo: String, dificuldade: String },
+  props: { teste: String, dificuldade: String },
   data() {
     return {
-      dificuldadeEscolhida: this.dificuldade,
+      store,
       perguntas: ["perguntei.", "dois", "pergunta três"],
       perguntaAtual: 0,
     };
   },
   methods: {
-    mudarPergunta() {
-      this.perguntaAtual++;
+    mudarPergunta(n) {
+      this.perguntaAtual += n;
     },
   },
 };
