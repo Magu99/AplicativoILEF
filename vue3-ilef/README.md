@@ -4,6 +4,11 @@
 ```
 npm install
 ```
+### Roda o UI para desenvolvimento em tempo real
+```
+vue ui
+```
+
 
 ### Compiles and hot-reloads for development
 ```
