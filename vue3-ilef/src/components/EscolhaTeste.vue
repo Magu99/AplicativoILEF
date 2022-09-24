@@ -36,15 +36,14 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 100%;
+  flex-wrap: wrap;
 }
 
 button {
-  margin-top: 8em;
-  margin-bottom: 8em;
+  margin: 15px;
   display: block;
-  height: 10em;
-  width: 20em;
+  height: 6em;
+  width: 15em;
   font-size: large;
 }
 </style>

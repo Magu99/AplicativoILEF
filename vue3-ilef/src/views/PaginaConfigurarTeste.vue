@@ -1,23 +1,22 @@
 <template>
   <div>
     <TituloILEF />
+    <NavigationBar />
     <VisorDificuldade v-if="store.dificuldade !== ''" />
     <EscolhaDificuldade v-if="step == 0" />
 
-    <VisorTeste v-if="store.tipo !== ''"/>
+    <VisorTeste v-if="store.tipo !== ''" />
     <EscolhaTeste v-if="step == 1" />
     <div id="button-wrapper">
-      <button v-if="step === 2">
-        <router-link to="/teste">
-          Iniciar Teste
-        </router-link>
-      </button>
       <button
         id="reset-config-btn"
         @click="setDificuldade(''), setTeste('')"
         v-if="step === 2"
       >
         Resetar Escolhas
+      </button>
+      <button v-if="step === 2" @click="$router.push('teste')">
+        Iniciar Teste
       </button>
     </div>
   </div>
@@ -30,6 +29,7 @@ import TituloILEF from "@/components/TituloILEF.vue";
 import { store } from "@/store/storage";
 import VisorDificuldade from "@/components/VisorDificuldade.vue";
 import VisorTeste from "@/components/VisorTeste.vue";
+import NavigationBar from "@/components/NavigationBar.vue";
 
 export default {
   name: "PaginaConfigurarTeste",
@@ -40,7 +40,8 @@ export default {
     TituloILEF,
     VisorDificuldade,
     VisorTeste,
-  },
+    NavigationBar
+},
   data() {
     return {
       store,
@@ -57,12 +58,16 @@ export default {
   },
   computed: {
     step() {
-      // Aqui tem três passos: 0=escolher dificuldade, 1=escolher tipo, 2=confirmar escolha
+      // Aqui tem três passos: 0=escolher dificuldade, 1=escolher tipo, 2=confirmar/resetar escolhas
       if (this.store.dificuldade !== "") {
         if (this.store.tipo !== "") {
           return 2;
-        } else {return 1}
-      } else {return 0}
+        } else {
+          return 1;
+        }
+      } else {
+        return 0;
+      }
     },
   },
 };
@@ -73,15 +78,14 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 100%;
+  flex-wrap: wrap;
+
 }
 
 button {
-  margin-top: 8em;
-  margin-bottom: 8em;
-  display: block;
+  margin: 15px;
+  display: inline-block;
   font-size: large;
   padding: 1em;
 }
-
 </style>

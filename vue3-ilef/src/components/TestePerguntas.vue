@@ -1,30 +1,61 @@
 <template>
-  <div @click="mudarPergunta(1)">
-    <!-- <transition> -->
-      <h4>{{ perguntas[perguntaAtual] }}</h4>
-    <!-- </transition> -->
+  <div id="wrapper">
+    <div @click="mudarFrame(1)" id="content">
+      <!-- <transition> -->
+      <h4>{{frameAtual}} </h4>
+      <!-- </transition> -->
+    </div>
   </div>
 </template>
 
 <script>
-import { store } from '@/store/storage';
+import { store } from "@/store/storage";
 
 export default {
   name: "TestePerguntas",
-  props: { teste: String, dificuldade: String },
+  props: {},
   data() {
     return {
       store,
-      perguntas: ["perguntei.", "dois", "pergunta três"],
-      perguntaAtual: 0,
+      frameAtual: 0,
     };
   },
   methods: {
-    mudarPergunta(n) {
-      this.perguntaAtual += n;
+    mudarFrame(n) {
+      this.frameAtual += n;
     },
+  },
+  computed: {
+    // textoExposto() {
+    //   var f = this.frameAtual;
+    //   switch (f) {
+    //     case 0:
+    //       return "Título & Texto"
+    //     case 1:
+    //       return "Premissa"
+    //     default:
+    //       return "Pergunta Nº " + this.frameAtual
+    //   }
+    // },
   },
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+#wrapper {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  border: dotted 2px;
+  width: 100%;
+  height: 40em;
+}
+
+#content {
+  width: 70%;
+  height: 90%;
+  border: dotted red 1px;
+  text-align: center;
+}
+</style>

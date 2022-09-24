@@ -2,7 +2,7 @@
     <div>
       <TituloILEF />
       <NavigationBar/>
-      <p><b>Desenvolvido por:</b> Matheus Wagner, Elizeu & Cleber</p>
+      <p><b>Desenvolvido por:</b> Matheus Wagner, Elizeu Macedo, Cleber e Alexandre Cerpa</p>
       <p><b>Artigo em:</b> permalink do artigo original</p>
       <p><em>Direitos Autorais ® Mestre Elizeu 2022</em></p>
       <br><br>
@@ -23,12 +23,13 @@ import TituloILEF from '@/components/TituloILEF.vue';
   <style scoped>
     p {
       text-align: left;
-      margin-left: 12em;
+      margin-left: 8%;
+      margin-right: 8%;
     }
 
     h3 {
       text-align: left;
-      margin-left: 13em;
+      margin-left: 15%;
     }
   </style>
   

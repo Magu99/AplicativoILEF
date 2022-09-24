@@ -5,13 +5,13 @@
       <NavigationBar />
     </div>
     <div id="button-wrapper">
-      <router-link to="/cadastro"><button id="cadastro">
-        Cadastro
-      </button></router-link>
+      <router-link to="/cadastro"
+        ><button id="cadastro">Cadastro</button></router-link
+      >
 
-      <router-link to="/configurar-teste"><button id="inciar">
-        Começar Atividades
-      </button></router-link>
+      <router-link to="/configurar-teste"
+        ><button id="inciar">Atividades</button></router-link
+      >
     </div>
   </div>
 </template>
@@ -29,20 +29,21 @@ export default {
 <style scoped>
 #button-wrapper {
   display: flex;
-  align-items: center;
+  flex-flow: wrap;
   justify-content: space-evenly;
-  height: 100%;
+  align-content: space-around;
+  margin-top: 10em;
 }
 
 button {
-  margin-top: 8em;
-  display: block;
-  height: 10em;
-  width: 20em;
+  display: inline-block;
+  padding: 1em;
+  width: 12em;
   font-size: large;
+  margin: 15px;
 }
 
-h1{
+h1 {
   text-align: center;
   padding-top: 2em;
 }

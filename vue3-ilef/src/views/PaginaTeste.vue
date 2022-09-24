@@ -1,8 +1,8 @@
 <template>
   <div>
     <TituloILEF />
-    <TestePalavras teste="" dificuldade=""/>
-    <TestePerguntas teste="" dificuldade=""/>
+    <TestePalavras v-if="store.tipo === 'Palavras'"/>
+    <TestePerguntas v-if="store.tipo === 'Leitura'" />
   </div>
 </template>
 
@@ -10,10 +10,15 @@
 import TestePalavras from '@/components/TestePalavras.vue';
 import TestePerguntas from '@/components/TestePerguntas.vue';
 import TituloILEF from '@/components/TituloILEF.vue';
+import { store } from '@/store/storage';
 export default {
     name: "PaginaTeste",
-    props: { },
-    components: { TestePalavras, TestePerguntas, TituloILEF }
+    components: { TestePalavras, TestePerguntas, TituloILEF },
+    data() {
+      return {
+        store
+      }
+    }
 };
 </script>
 
