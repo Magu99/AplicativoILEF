@@ -9,7 +9,7 @@
 </template>
 
 <script>
-  import { store } from '@/store/storage';
+import { store } from "@/store/storage";
 export default {
   name: "EscolhaDificuldade",
   props: {},
@@ -24,7 +24,7 @@ export default {
         "4º Ano",
         "5º Ano",
       ],
-      store
+      store,
     };
   },
   methods: {
