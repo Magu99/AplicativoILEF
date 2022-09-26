@@ -1,9 +1,14 @@
 <template>
-  <div id="wrapper">
-    <div @click="mudarFrame(1)" id="content">
-      <!-- <transition> -->
-      <h4>{{frameAtual}} </h4>
-      <!-- </transition> -->
+  <div>
+    <button id="fechar" @click="$router.push('configurar-teste')"  > X </button>
+    <div id="wrapper">
+      <button class="navegar">&lt;</button>
+      <div @click="mudarFrame(1, $event)" id="content">
+        <!-- <transition> -->
+        <h4>{{}}</h4>
+        <!-- </transition> -->
+      </div>
+      <button class="navegar">></button>
     </div>
   </div>
 </template>
@@ -21,23 +26,12 @@ export default {
     };
   },
   methods: {
-    mudarFrame(n) {
+    mudarFrame(n, event) {
+      event ? event.preventdefault : null;
       this.frameAtual += n;
     },
   },
-  computed: {
-    // textoExposto() {
-    //   var f = this.frameAtual;
-    //   switch (f) {
-    //     case 0:
-    //       return "Título & Texto"
-    //     case 1:
-    //       return "Premissa"
-    //     default:
-    //       return "Pergunta Nº " + this.frameAtual
-    //   }
-    // },
-  },
+  computed: {},
 };
 </script>
 
@@ -46,8 +40,8 @@ export default {
   display: flex;
   align-content: center;
   align-items: center;
-  justify-content: center;
-  border: dotted 2px;
+  justify-content: space-around;
+  border: dotted green 2px;
   width: 100%;
   height: 40em;
 }
@@ -57,5 +51,13 @@ export default {
   height: 90%;
   border: dotted red 1px;
   text-align: center;
+}
+
+.navegar {
+  padding: 1.5em;
+}
+
+.fechar {
+  position: absolute;
 }
 </style>

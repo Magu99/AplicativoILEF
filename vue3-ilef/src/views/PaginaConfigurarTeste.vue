@@ -2,11 +2,19 @@
   <div>
     <TituloILEF />
     <NavigationBar />
-    <VisorDificuldade v-if="store.dificuldade !== ''" />
-    <EscolhaDificuldade v-if="step == 0" />
+    <transition>
+      <VisorDificuldade v-if="store.dificuldade !== ''" />
+    </transition>
+    <transition>
+      <EscolhaDificuldade v-if="step == 0" />
+    </transition>
 
-    <VisorTeste v-if="store.tipo !== ''" />
-    <EscolhaTeste v-if="step == 1" />
+    <transition>
+      <VisorTeste v-if="store.tipo !== ''" />
+    </transition>
+    <transition>
+      <EscolhaTeste v-if="step == 1" />
+    </transition>
     <div id="button-wrapper">
       <button
         id="reset-config-btn"
@@ -40,8 +48,8 @@ export default {
     TituloILEF,
     VisorDificuldade,
     VisorTeste,
-    NavigationBar
-},
+    NavigationBar,
+  },
   data() {
     return {
       store,
@@ -79,7 +87,6 @@ export default {
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-
 }
 
 button {
@@ -87,5 +94,14 @@ button {
   display: inline-block;
   font-size: large;
   padding: 1em;
+}
+
+.v-enter-active,
+.v-leave-active {
+
+}
+
+.v-enter-from,
+.v-leave-to {
 }
 </style>
