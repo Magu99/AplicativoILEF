@@ -1,11 +1,13 @@
 <template>
   <div id="wrapper">
-    <h3> Teste: {{ store.tipo}} </h3>
+    <transition>
+      <h3>Teste: {{ store.tipo }}</h3>
+    </transition>
   </div>
 </template>
 
 <script>
-  import { store } from '@/store/storage';
+import { store } from "@/store/storage";
 export default {
   name: "VisorTeste",
   data() {
@@ -27,4 +29,14 @@ export default {
 h3 {
   text-align: center;
 }
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
 </style>
