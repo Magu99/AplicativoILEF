@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div >
     <button id="fechar" @click="$router.push('configurar-teste')"  > X </button>
     <div id="wrapper">
       <button class="navegar">&lt;</button>
@@ -27,7 +27,7 @@ export default {
   },
   methods: {
     mudarFrame(n, event) {
-      event ? event.preventdefault : null;
+      event ? event.preventdefault() : null;
       this.frameAtual += n;
     },
   },
@@ -41,20 +41,21 @@ export default {
   align-content: center;
   align-items: center;
   justify-content: space-around;
-  border: dotted green 2px;
-  width: 100%;
-  height: 40em;
+  margin: 5vh 10vw 5vh 10vw;
 }
 
 #content {
-  width: 70%;
-  height: 90%;
-  border: dotted red 1px;
+  width: 85vw;
+  height: 80vh;
   text-align: center;
+  border: 2px dotted;
 }
 
 .navegar {
-  padding: 1.5em;
+  width:8vw;
+  height: 40vh;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 .fechar {

@@ -20,10 +20,8 @@ export default {
 
 <style scoped>
 #wrapper {
-  border: 4px;
   border-color: black;
   padding: 8.5px;
-  margin: 10px;
 }
 
 h3 {

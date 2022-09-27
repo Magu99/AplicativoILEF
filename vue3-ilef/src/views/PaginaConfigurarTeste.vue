@@ -2,19 +2,15 @@
   <div>
     <TituloILEF />
     <NavigationBar />
-    <transition>
+    <div>
       <VisorDificuldade v-if="store.dificuldade !== ''" />
-    </transition>
-    <transition>
       <EscolhaDificuldade v-if="step == 0" />
-    </transition>
+    </div>
 
-    <transition>
+    <div>
       <VisorTeste v-if="store.tipo !== ''" />
-    </transition>
-    <transition>
       <EscolhaTeste v-if="step == 1" />
-    </transition>
+    </div>
     <div id="button-wrapper">
       <button
         id="reset-config-btn"
@@ -85,23 +81,15 @@ export default {
 #button-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 button {
-  margin: 15px;
   display: inline-block;
   font-size: large;
   padding: 1em;
 }
 
-.v-enter-active,
-.v-leave-active {
 
-}
-
-.v-enter-from,
-.v-leave-to {
-}
 </style>

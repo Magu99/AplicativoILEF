@@ -19,5 +19,11 @@ export default {
 <style scoped>
   nav {
     text-align: center;
+    font-size: calc(12px + 1vw);
+  }
+
+  div {
+    height: 6vh;
+    padding-bottom: 2em;
   }
 </style>

@@ -12,11 +12,17 @@ export default {
 
 <style scoped>
 h1 {
+  font-size: calc(23px+ 2vw);
   text-align: center;
-  margin-top: 1.5em;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+}
+
+div {
+  height: 13vh;
+  max-height: 700px;
+  padding-top: 4vh;
 }
 </style>

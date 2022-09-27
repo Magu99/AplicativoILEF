@@ -1,7 +1,7 @@
 <!-- conectar cada item da lista com uma parametros pré-determinados do template PáginaFluxo -->
 
 <template>
-  <div>
+  <div id="container">
     <h3>Lista de Palavras</h3>
     <div id="list-wrapper">
       <ol>
@@ -9,13 +9,20 @@
       </ol>
     </div>
     <div id="button-wrapper">
-      <button @click="$router.push('configurar-teste'); setTeste('')">Avançar >></button>
+      <button
+        @click="
+          $router.push('configurar-teste');
+          setTeste('');
+        "
+      >
+        Avançar >>
+      </button>
     </div>
   </div>
 </template>
 
 <script>
-  import { store } from '@/store/storage';
+import { store } from "@/store/storage";
 export default {
   name: "TestePalavras",
   data() {
@@ -45,29 +52,35 @@ export default {
       store,
     };
   },
-    methods: {
-      setTeste(value) {
+  methods: {
+    setTeste(value) {
       this.store.tipo = value;
     },
-    },
+  },
 };
 </script>
 
 <style scoped>
+#container {
+  height: inherit;
+}
+
 #list-wrapper {
   display: flex;
   justify-content: center;
   margin-top: 3em;
-  height: 500px;
+  height: 400px;
 }
 
 ol {
-  width: 70%;
+  width: 80vw;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  border: 4px dotted;
+  padding-top: 1em;
 }
 
 li {
@@ -88,7 +101,8 @@ h3 {
 
 button {
   font-size: 1em;
-  padding: 1.5em;
+  padding: 0.5em;
   margin-right: 7.5em;
+  margin-bottom: 2.5em;
 }
 </style>

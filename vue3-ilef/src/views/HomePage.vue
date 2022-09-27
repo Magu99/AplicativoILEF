@@ -30,21 +30,16 @@ export default {
 #button-wrapper {
   display: flex;
   flex-flow: wrap;
-  justify-content: space-evenly;
-  align-content: space-around;
-  margin-top: 10em;
+  justify-content: space-around;
+  align-content: space-evenly;
+  height: 70vh;
 }
 
 button {
   display: inline-block;
   padding: 1em;
-  width: 12em;
-  font-size: large;
-  margin: 15px;
-}
-
-h1 {
-  text-align: center;
-  padding-top: 2em;
+  height: calc(108px + 4vh);
+  width: calc(192px + 7vw);
+  font-size: calc(14px + 2vw);
 }
 </style>
