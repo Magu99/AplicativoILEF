@@ -44,8 +44,8 @@ h3 {
 }
 
 button {
-  width: 25vw;
+  width: 15vw;
   height: 15vh;
-  font-size: large;
+  font-size: 2em;
 }
 </style>

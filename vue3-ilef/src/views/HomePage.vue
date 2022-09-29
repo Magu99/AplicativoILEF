@@ -37,6 +37,6 @@ export default {
 
 button {
   padding: 1em;
-  font-size: larger;
+  font-size: 2em;
 }
 </style>

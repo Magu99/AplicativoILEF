@@ -64,9 +64,9 @@ li {
 }
 
 button {
-  margin: 12px;
+  margin: 8px;
   padding: 2px;
-  width: 30vw;
-  font-size: large;
+  width: 20vw;
+  font-size: 2em;
 }
 </style>
