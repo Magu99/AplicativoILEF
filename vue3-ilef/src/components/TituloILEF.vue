@@ -21,8 +21,5 @@ h1 {
 }
 
 div {
-  height: 13vh;
-  max-height: 700px;
-  padding-top: 4vh;
 }
 </style>

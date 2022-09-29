@@ -38,21 +38,9 @@ export default {
 
 <style scoped>
 #wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 2em;
-  border-style: 1px;
-  border: 2px;
+
 }
 
 button {
-  border-color: aquamarine;
-  align-self: center;
-  justify-content: center;
-  width: 14em;
-  margin: 0.5em;
-  font-size: large;
 }
 </style>

@@ -79,16 +79,9 @@ export default {
 
 <style scoped>
 #button-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
 }
 
 button {
-  display: inline-block;
-  font-size: large;
-  padding: 1em;
 }
 
 

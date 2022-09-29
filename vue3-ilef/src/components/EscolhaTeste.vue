@@ -33,17 +33,8 @@ h3 {
 }
 
 #button-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
 }
 
 button {
-  margin: 15px;
-  display: block;
-  height: 6em;
-  width: 15em;
-  font-size: large;
 }
 </style>

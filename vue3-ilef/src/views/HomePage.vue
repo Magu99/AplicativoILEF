@@ -28,18 +28,8 @@ export default {
 
 <style scoped>
 #button-wrapper {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: space-around;
-  align-content: space-evenly;
-  height: 70vh;
 }
 
 button {
-  display: inline-block;
-  padding: 1em;
-  height: calc(108px + 4vh);
-  width: calc(192px + 7vw);
-  font-size: calc(14px + 2vw);
 }
 </style>
