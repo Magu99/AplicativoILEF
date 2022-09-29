@@ -29,11 +29,23 @@ export default {
 
 <style scoped>
 h3 {
+  margin-top: 1em;
+  text-align: center;
 }
 
 #button-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 30vh;
+
 }
 
 button {
+  width: 25vw;
+  height: 15vh;
+  font-size: large;
 }
 </style>

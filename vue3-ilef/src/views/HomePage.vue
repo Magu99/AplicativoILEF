@@ -28,8 +28,15 @@ export default {
 
 <style scoped>
 #button-wrapper {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
 }
 
 button {
+  padding: 1em;
+  font-size: larger;
 }
 </style>

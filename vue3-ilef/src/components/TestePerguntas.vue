@@ -1,14 +1,17 @@
 <template>
-  <div >
-    <button id="fechar" @click="$router.push('configurar-teste')"  > X </button>
+  <div id="container">
+    <button id="fechar" @click="$router.push('configurar-teste')">X</button>
     <div id="wrapper">
-      <button class="navegar">&lt;</button>
-      <div @click="mudarFrame(1, $event)" id="content">
+      <button class="navegar" @click="mudarFrame(-1)">&lt;</button>
+      <div id="content" @click="mudarFrame(1)">
         <!-- <transition> -->
-        <h4>{{}}</h4>
+        <p id="perguntas">
+          O frame atual seria: {{ frameAtual }}. Só quero testar a formatação
+          com isso aqui. Lorem Ipsum dolor amet.
+        </p>
         <!-- </transition> -->
       </div>
-      <button class="navegar">></button>
+      <button class="navegar" @click="mudarFrame(1)">></button>
     </div>
   </div>
 </template>
@@ -26,8 +29,8 @@ export default {
     };
   },
   methods: {
-    mudarFrame(n, event) {
-      event ? event.preventdefault() : null;
+    mudarFrame(n) {
+      console.log("Adicionou " + n)
       this.frameAtual += n;
     },
   },
@@ -36,13 +39,36 @@ export default {
 </script>
 
 <style scoped>
-#wrapper {
+#container {
+  height: 95vh;
 }
 
+#wrapper {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2vh 6vw 2vh 6vw;
+}
 #content {
+  border: 2px dotted;
+  width: 75vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: larger;
+  margin: auto;
+  text-align: center;
+  padding: 0px 20px 0px 20px;
 }
 
 .navegar {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 .fechar {

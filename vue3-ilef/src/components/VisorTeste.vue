@@ -23,6 +23,8 @@ export default {
 }
 
 h3 {
+  text-align: center;
+  font-size: larger;
 }
 
 </style>

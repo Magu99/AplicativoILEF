@@ -2,6 +2,7 @@
   <div>
     <TituloILEF />
     <NavigationBar />
+    <br>
     <p>
       <b>Desenvolvido por:</b> Matheus Wagner, Elizeu Macedo, Cleber e Alexandre
       Cerpa
@@ -25,8 +26,12 @@ export default {
 
 <style scoped>
 p {
+  text-align: center;
+  font-size: small;
 }
 
 h3 {
+  text-align: left;
+  margin-left: 10vw;
 }
 </style>

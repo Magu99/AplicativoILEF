@@ -79,9 +79,19 @@ export default {
 
 <style scoped>
 #button-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 30vh;
+
 }
 
 button {
+  width: 25vw;
+  height: 15vh;
+  font-size: large;
 }
 
 

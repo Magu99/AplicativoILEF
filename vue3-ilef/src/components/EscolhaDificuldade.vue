@@ -1,11 +1,16 @@
-<!-- conectar cada item da lista com uma parametros pré-determinados do template PáginaFluxo -->
-
 <template>
-  <div id="wrapper">
-    <button v-for="(v, i) in lista" :key="i" @click="setDificuldade(v)">
-      {{ v }}
-    </button>
+  <div>
+    <h3>Qual tipo de teste?</h3>
+    <div id="wrapper">
+    <ol>
+      <li v-for="(v, i) in lista" :key="i">
+        <button @click="setDificuldade(v)">
+          {{ v }}
+        </button>
+      </li>
+    </ol>
   </div>
+</div>
 </template>
 
 <script>
@@ -37,10 +42,31 @@ export default {
 </script>
 
 <style scoped>
-#wrapper {
+h3 {
+  text-align: center;
+  margin-top: 2em;
+}
 
+#wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+ol {
+  list-style: none;
+  padding-left: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+li {
 }
 
 button {
+  margin: 12px;
+  padding: 2px;
+  width: 30vw;
+  font-size: large;
 }
 </style>

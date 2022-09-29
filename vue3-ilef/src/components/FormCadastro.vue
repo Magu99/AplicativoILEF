@@ -24,12 +24,31 @@ export default {
 </script>
 
 <style scoped>
+
 #form-wrapper {
+  margin-top: 2em;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: left;
+  width: fit-content;
 }
 
 label {
+  margin: 2px;
 }
 
 input {
+  margin: 2px;
+}
+
+button {
+  margin-top: 4px;
 }
 </style>

@@ -19,7 +19,4 @@ h1 {
   -webkit-user-select: none;
   -ms-user-select: none;
 }
-
-div {
-}
 </style>
