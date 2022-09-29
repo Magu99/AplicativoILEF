@@ -29,7 +29,6 @@ export default {
 
 <style scoped>
 h3 {
-  text-align: center;
 }
 
 #button-wrapper {
