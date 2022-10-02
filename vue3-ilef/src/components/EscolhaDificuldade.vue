@@ -58,15 +58,13 @@ ol {
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-
-li {
+  flex-wrap: wrap;
 }
 
 button {
   margin: 8px;
   padding: 2px;
   width: 20vw;
-  font-size: 2em;
+  font-size: 2.5vw;
 }
 </style>

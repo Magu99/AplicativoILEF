@@ -6,13 +6,15 @@
       <div id="content" @click="mudarFrame(1)">
         <!-- <transition> -->
         <p id="perguntas">
-          O frame atual seria: {{ frameAtual }}. Só quero testar a formatação
-          com isso aqui. Lorem Ipsum dolor amet.
+          {{perguntas[frameAtual]}}
         </p>
         <!-- </transition> -->
       </div>
       <button class="navegar" @click="mudarFrame(1)">></button>
     </div>
+    <button id="seguir" @click="$router.push('configurar-teste'); setTeste('');">
+        Avançar >>
+      </button>
   </div>
 </template>
 
@@ -26,12 +28,24 @@ export default {
     return {
       store,
       frameAtual: 0,
+      perguntas: [
+					"Gato Mimi",
+					"Mimi é o gato da tia Bia. Ele é peludo. Mimi pula e rola na cama todo dia. A tia Bia gosto muito de gato.",
+					"Agora eu gostaria que você me recontasse essa história que acabou de ler. Conte para mim a história com o maior número de detalhes que você se lembrar.",
+					"Quem é Mimi?",
+					"O que Mimi faz na cama da tia Bia todo dia?",
+					"Por que Mimi gosta de pular e rolar na cama?",
+					"Por que algumas pessoas gostam tanto de gatos?",
+					"O que quer dizer peludo?"
+				]
     };
   },
   methods: {
     mudarFrame(n) {
-      console.log("Adicionou " + n)
       this.frameAtual += n;
+    },
+    setTeste(value) {
+      this.store.tipo = value;
     },
   },
   computed: {},
@@ -48,11 +62,11 @@ export default {
   align-content: center;
   align-items: center;
   justify-content: space-around;
-  margin: 2vh 6vw 2vh 6vw;
+  margin-top: 5vh;
 }
 #content {
   border: 2px dotted;
-  width: 75vw;
+  width: 85vw;
   height: 80vh;
   display: flex;
   justify-content: center;
@@ -60,18 +74,43 @@ export default {
 }
 
 p {
-  font-size: larger;
+  font-size: 3vw;
   margin: auto;
   text-align: center;
   padding: 0px 20px 0px 20px;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .navegar {
   margin-left: 0.5em;
   margin-right: 0.5em;
+  font-size: 3vw;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .fechar {
   position: absolute;
+  font-size: 3vw;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+#seguir {
+  position: absolute;
+  font-size: 1.5vw;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  right: 10vw;
+  bottom: 4vw;
 }
 </style>

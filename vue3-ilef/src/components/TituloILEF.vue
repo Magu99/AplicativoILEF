@@ -11,8 +11,12 @@ export default {
 </script>
 
 <style scoped>
+
 h1 {
-  font-size: calc(23px+ 2vw);
+  font-family: Blorp;
+  color: #FEA800;
+  letter-spacing: 5px;
+  font-size: calc(33px+ 3vw);
   text-align: center;
   user-select: none;
   -moz-user-select: none;

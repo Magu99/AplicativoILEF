@@ -38,14 +38,20 @@ form {
   flex-direction: column;
   align-items: left;
   width: fit-content;
+  border: 2px dotted black;
+  border-radius: 2em;
+  padding: 2em;
 }
 
 label {
   margin: 2px;
+  margin: 0.5em;
 }
 
 input {
   margin: 2px;
+  border: black 1px dotted;
+  border-radius: 5px;
 }
 
 button {

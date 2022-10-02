@@ -5,6 +5,7 @@
       <NavigationBar />
     </div>
     <div id="button-wrapper">
+      <!-- <img src="@/assets/botao1.png" alt="Botão da Página de Cadastro" /> -->
       <router-link to="/cadastro"
         ><button id="cadastro">Cadastro</button></router-link
       >
@@ -32,7 +33,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  
+  flex-wrap: wrap;
 }
 
 button {

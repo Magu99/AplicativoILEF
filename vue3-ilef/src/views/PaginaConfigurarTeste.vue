@@ -15,9 +15,9 @@
       <button
         id="reset-config-btn"
         @click="setDificuldade(''), setTeste('')"
-        v-if="step === 2"
+        v-if="step === 2 || step == 1"
       >
-        Resetar Escolhas
+      <img src="@/assets/left-return-arrow.svg" alt="Desfazer Configurações">
       </button>
       <button v-if="step === 2" @click="$router.push('teste')">
         Iniciar Teste
@@ -89,9 +89,11 @@ export default {
 }
 
 button {
-  padding: 15px 15px 15px 15px;
+  padding: 15px;
   font-size: 2em;
 }
 
-
+img{
+  width: 3vw;
+}
 </style>

@@ -27,7 +27,6 @@ export default {
 <style scoped>
 p {
   text-align: center;
-  font-size: small;
 }
 
 h3 {
