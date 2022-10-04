@@ -1,0 +1,6 @@
+
+Vermelho: #CD4343
+Laranja: #FEA800
+Bege: #FFF2E6
+Azul Céu: #A9D9FF
+Verde Água: #73C8B1
