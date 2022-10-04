@@ -19,9 +19,6 @@ export default {
 </script>
 
 <style scoped>
-#wrapper {
-}
-
 h3 {
   text-align: center;
   font-size: larger;

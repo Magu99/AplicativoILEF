@@ -92,8 +92,6 @@ button {
   padding: 15px;
   font-size: 2em;
   font-family: Blorp;
-  border: cyan solid 1px;
-  background-color: lightcyan;
 }
 
 img{

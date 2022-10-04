@@ -16,7 +16,7 @@ h1 {
   font-family: Blorp;
   color: #FEA800;
   letter-spacing: 5px;
-  font-size: calc(33px+ 3vw);
+  font-size: calc(33px+ 4vw);
   text-align: center;
   user-select: none;
   -moz-user-select: none;

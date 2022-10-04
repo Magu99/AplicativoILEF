@@ -91,6 +91,7 @@ export default {
 #container {
   height: inherit;
 }
+
 #table-wrapper {
   display: flex;
   align-content: center;
@@ -111,11 +112,13 @@ h3 {
   font-size: larger;
   margin-top: 1em;
 }
+
 #button-wrapper {
   width: 100%;
   display: flex;
   justify-content: right;
 }
+
 button {
   padding: 0.5em;
   margin-right: 7.5em;

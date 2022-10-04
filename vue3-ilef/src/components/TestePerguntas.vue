@@ -74,7 +74,7 @@ export default {
 }
 
 p {
-  font-size: 3vw;
+  font-size: 5vw;
   margin: auto;
   text-align: center;
   padding: 0px 20px 0px 20px;
@@ -114,7 +114,5 @@ p {
   right: 10vw;
   bottom: 4vw;
   font-family: Blorp;
-  background-color: lightcyan;
-  border: cyan 1px solid;
 }
 </style>
