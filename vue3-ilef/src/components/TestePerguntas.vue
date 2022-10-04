@@ -101,6 +101,7 @@ p {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+  font-family: Blorp;
 }
 
 #seguir {
@@ -112,5 +113,8 @@ p {
   -ms-user-select: none;
   right: 10vw;
   bottom: 4vw;
+  font-family: Blorp;
+  background-color: lightcyan;
+  border: cyan 1px solid;
 }
 </style>

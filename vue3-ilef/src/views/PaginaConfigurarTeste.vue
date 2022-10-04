@@ -91,9 +91,14 @@ export default {
 button {
   padding: 15px;
   font-size: 2em;
+  font-family: Blorp;
+  border: cyan solid 1px;
+  background-color: lightcyan;
 }
 
 img{
   width: 3vw;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
 }
 </style>

@@ -117,9 +117,12 @@ h3 {
   justify-content: right;
 }
 button {
-  font-size: 1em;
   padding: 0.5em;
   margin-right: 7.5em;
   margin-bottom: 2.5em;
+  font-size: 2.5vw;
+  font-family: Blorp;
+  background-color: lightcyan;
+  border: cyan 1px solid;
 }
 </style>

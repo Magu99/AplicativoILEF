@@ -1,16 +1,26 @@
 <template>
-  <div>
-    <h3>Qual tipo de teste?</h3>
-    <div id="wrapper">
-    <ol>
-      <li v-for="(v, i) in lista" :key="i">
-        <button @click="setDificuldade(v)">
-          {{ v }}
-        </button>
-      </li>
-    </ol>
+  <div id="container">
+    <div id="table-container">
+      <table>
+        <tr>
+          <td class="margem-vertical"></td>
+          <td class=""></td>
+        </tr>
+        <tr v-for="(v, i) in lista" :key="i" id="wrapper">
+          <td class="margem-da-folha"></td>
+          <td>
+            <button @click="setDificuldade(v)">
+              {{ v }}
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td class="margem-vertical no-bottom"></td>
+          <td class="no-bottom"></td>
+        </tr>
+      </table>
+    </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -42,29 +52,49 @@ export default {
 </script>
 
 <style scoped>
-h3 {
+#table-container {
   text-align: center;
-  margin-top: 2em;
+}
+
+table {
+  box-shadow: 5px 5px 4px lightgrey;
+  width: 30vw;
+  display: inline-block;
 }
 
 #wrapper {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  width: 17.5vw;
 }
 
-ol {
-  list-style: none;
-  padding-left: 0px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
+td {
+  border-bottom: 1px solid skyblue;
+  height: 3.2vw;
+  width: 17.5vw;
+}
+
+.margem-da-folha {
+  border-right: 1px solid skyblue;
+  width: 2.5vw;
+  margin-left: 2vw;
+}
+
+.margem-vertical {
+  border-right: 1px solid skyblue;
+  width: 2.5vw;
+  margin-left: 2vw;
+}
+
+.no-bottom {
+  border-bottom: none;
 }
 
 button {
-  margin: 8px;
   padding: 2px;
-  width: 20vw;
-  font-size: 2.5vw;
+  width: 25vw;
+  font-size: 2vw;
+  font-family: Blorp;
+  background-color: white;
+  border: none;
 }
 </style>
