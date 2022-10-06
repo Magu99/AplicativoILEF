@@ -1,17 +1,45 @@
-<template>
+<template id="root">
   <div>
     <TituloILEF />
     <div>
       <NavigationBar />
     </div>
     <div id="button-wrapper">
-      <router-link to="/cadastro"
-        ><button id="cadastro">Cadastro</button></router-link
-      >
+      <table>
+        <tr>
+          <td class="margem-vertical"></td>
+          <td class=""></td>
+        </tr>
+        <tr>
+          <td class="margem-da-folha"></td>
+          <td>
+            <router-link to="/cadastro"><button>Cadastro</button></router-link>
+          </td>
+        </tr>
+        <tr>
+          <td class="margem-vertical no-bottom"></td>
+          <td class="no-bottom"></td>
+        </tr>
+      </table>
 
-      <router-link to="/configurar-teste"
-        ><button id="inciar">Atividades</button></router-link
-      >
+      <table>
+        <tr>
+          <td class="margem-vertical"></td>
+          <td class=""></td>
+        </tr>
+        <tr>
+          <td class="margem-da-folha"></td>
+          <td>
+            <router-link to="/configurar-teste"
+              ><button id="inciar">Atividades</button></router-link
+            >
+          </td>
+        </tr>
+        <tr>
+          <td class="margem-vertical no-bottom"></td>
+          <td class="no-bottom"></td>
+        </tr>
+      </table>
     </div>
   </div>
 </template>
@@ -27,19 +55,57 @@ export default {
 </script>
 
 <style scoped>
+#root {
+  background-color: red;
+}
+
 #button-wrapper {
+  height: 60vh;
   display: flex;
-  flex-flow: wrap;
+  align-items: center;
   justify-content: space-around;
-  align-content: space-evenly;
-  height: 70vh;
+  flex-wrap: wrap;
+}
+
+table {
+  box-shadow: 5px 5px 4px lightgrey;
+  width: 30vw;
+  display: inline-block;
+}
+
+#wrapper {
+  text-align: center;
+  width: 17.5vw;
+}
+
+td {
+  border-bottom: 1px solid skyblue;
+  height: 3.2vw;
+  width: 17.5vw;
+}
+
+.margem-da-folha {
+  border-right: 1px solid skyblue;
+  width: 2.5vw;
+  margin-left: 2vw;
+}
+
+.margem-vertical {
+  border-right: 1px solid skyblue;
+  width: 2.5vw;
+  margin-left: 2vw;
+}
+
+.no-bottom {
+  border-bottom: none;
 }
 
 button {
-  display: inline-block;
-  padding: 1em;
-  height: calc(108px + 4vh);
-  width: calc(192px + 7vw);
-  font-size: calc(14px + 2vw);
+  padding: 2px;
+  width: 25vw;
+  font-size: 2em;
+  font-family: Blorp;
+  background-color: white;
+  border: none;
 }
 </style>

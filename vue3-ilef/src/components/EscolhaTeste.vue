@@ -2,22 +2,43 @@
 
 <template>
   <div>
-    <h3>Qual tipo de teste?</h3>
-    <div id="button-wrapper">
-      <button id="leitura" @click="setTeste('Leitura')">Leitura</button>
-      <button id="palavras" @click="setTeste('Palavras')">Palavras</button>
+    <div id="table-container">
+      <table>
+        <tr>
+          <td class="margem-vertical"></td>
+          <td class=""></td>
+        </tr>
+        <tr id="wrapper">
+          <td class="margem-da-folha"></td>
+          <td>
+            <button id="leitura" @click="setTeste('Leitura')">Leitura de Texto</button>
+          </td>
+        </tr>
+        <tr id="wrapper">
+          <td class="margem-da-folha"></td>
+          <td>
+            <button id="palavras" @click="setTeste('Palavras')">
+              Leitura de Palavras
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td class="margem-vertical no-bottom"></td>
+          <td class="no-bottom"></td>
+        </tr>
+      </table>
     </div>
   </div>
 </template>
 
 <script>
-  import { store } from '@/store/storage';
+import { store } from "@/store/storage";
 export default {
   name: "EscolhaTeste",
   data() {
     return {
       store,
-    }
+    };
   },
   methods: {
     setTeste(value) {
@@ -28,22 +49,49 @@ export default {
 </script>
 
 <style scoped>
-h3 {
+#table-container {
   text-align: center;
 }
 
-#button-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+table {
+  box-shadow: 5px 5px 4px lightgrey;
+  width: 30vw;
+  display: inline-block;
+}
+
+#wrapper {
+  text-align: center;
+  width: 17.5vw;
+}
+
+td {
+  border-bottom: 1px solid skyblue;
+  height: 3.2vw;
+  width: 17.5vw;
+}
+
+.margem-da-folha {
+  border-right: 1px solid skyblue;
+  width: 2.5vw;
+  margin-left: 2vw;
+}
+
+.margem-vertical {
+  border-right: 1px solid skyblue;
+  width: 2.5vw;
+  margin-left: 2vw;
+}
+
+.no-bottom {
+  border-bottom: none;
 }
 
 button {
-  margin: 15px;
-  display: block;
-  height: 6em;
-  width: 15em;
-  font-size: large;
+  padding: 2px;
+  width: 25vw;
+  font-size: 2vw;
+  font-family: Blorp;
+  background-color: white;
+  border: none;
 }
 </style>

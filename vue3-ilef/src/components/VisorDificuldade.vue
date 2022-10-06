@@ -19,21 +19,8 @@ export default {
 </script>
 
 <style scoped>
-#wrapper {
-  border-color: black;
-  padding: 8.5px;
-}
-
 h3 {
   text-align: center;
-}
-.v-enter-active,
-.v-leave-active {
-  transition: opacity 0.5s ease;
-}
-
-.v-enter-from,
-.v-leave-to {
-  opacity: 0;
+  font-size: larger;
 }
 </style>

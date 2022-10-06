@@ -18,6 +18,7 @@ export default {
 
 <style scoped>
   nav {
+    font-family: Blorp;
     text-align: center;
     font-size: calc(12px + 1vw);
   }

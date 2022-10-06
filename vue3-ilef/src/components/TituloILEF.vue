@@ -11,18 +11,17 @@ export default {
 </script>
 
 <style scoped>
+
 h1 {
-  font-size: calc(23px+ 2vw);
+  font-family: Blorp;
+  margin-top: 0.5em;
+  color: #FEA800;
+  letter-spacing: 5px;
+  font-size: calc(33px+ 4vw);
   text-align: center;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-}
-
-div {
-  height: 13vh;
-  max-height: 700px;
-  padding-top: 4vh;
 }
 </style>
