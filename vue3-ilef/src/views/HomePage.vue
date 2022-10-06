@@ -103,7 +103,7 @@ td {
 button {
   padding: 2px;
   width: 25vw;
-  font-size: 2vw;
+  font-size: 2em;
   font-family: Blorp;
   background-color: white;
   border: none;

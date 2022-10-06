@@ -9,11 +9,10 @@
 <script>
 import TestePalavras from '@/components/TestePalavras.vue';
 import TestePerguntas from '@/components/TestePerguntas.vue';
-// import TituloILEF from '@/components/TituloILEF.vue';
 import { store } from '@/store/storage';
 export default {
     name: "PaginaTeste",
-    components: { TestePalavras, TestePerguntas/*, TituloILEF*/ },
+    components: { TestePalavras, TestePerguntas },
     data() {
       return {
         store

@@ -14,6 +14,7 @@ export default {
 
 h1 {
   font-family: Blorp;
+  margin-top: 0.5em;
   color: #FEA800;
   letter-spacing: 5px;
   font-size: calc(33px+ 4vw);

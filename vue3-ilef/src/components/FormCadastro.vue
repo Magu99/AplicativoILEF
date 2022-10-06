@@ -1,6 +1,6 @@
 <template>
   <div id="form-container">
-    <form action="POST">
+    <form action="">
       <table>
         <tr>
           <td class="margem-vertical"></td>
@@ -88,14 +88,13 @@ td {
   border-bottom: 1px solid skyblue;
   text-align: center;
   height: 3.2vw;
-  width: 17.5vw;
+  width: 25vw;
   padding: 0.25em;
 }
 
 .margem-da-folha {
   border-right: 1px solid skyblue;
   text-align: left;
-  width: 20vw;
   margin-left: 2vw;
 }
 
@@ -111,7 +110,6 @@ td {
 
 label {
   padding: 2px;
-  width: 20vw;
   font-size: 2vw;
   font-family: Blorp;
   background-color: white;

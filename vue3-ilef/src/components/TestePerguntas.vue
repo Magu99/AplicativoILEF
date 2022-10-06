@@ -2,18 +2,18 @@
   <div id="container">
     <button id="fechar" @click="$router.push('configurar-teste')">X</button>
     <div id="wrapper">
-      <button class="navegar" @click="mudarFrame(-1)">&lt;</button>
-      <div id="content" @click="mudarFrame(1)">
+      <button class="navegar" @click="frameAtual>1?mudarFrame(-1):null">&lt;</button>
+      <div id="content" @click="frameAtual<=6? mudarFrame(1): null">
         <!-- <transition> -->
         <p id="perguntas">
           {{perguntas[frameAtual]}}
         </p>
         <!-- </transition> -->
       </div>
-      <button class="navegar" @click="mudarFrame(1)">></button>
+      <button class="navegar" @click="frameAtual<=6? mudarFrame(1) : null">></button>
     </div>
-    <button id="seguir" @click="$router.push('configurar-teste'); setTeste('');">
-        Avançar >>
+    <button v-if="frameAtual >= 7" id="seguir" @click="$router.push('configurar-teste'); setTeste('');">
+        Encerrar
       </button>
   </div>
 </template>
@@ -112,7 +112,7 @@ p {
   -webkit-user-select: none;
   -ms-user-select: none;
   right: 10vw;
-  bottom: 4vw;
+  bottom: 2vw;
   font-family: Blorp;
 }
 </style>

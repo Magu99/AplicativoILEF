@@ -125,7 +125,5 @@ button {
   margin-bottom: 2.5em;
   font-size: 2.5vw;
   font-family: Blorp;
-  background-color: lightcyan;
-  border: cyan 1px solid;
 }
 </style>
