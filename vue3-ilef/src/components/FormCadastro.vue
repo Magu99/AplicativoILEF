@@ -75,7 +75,7 @@ export default {
 
 table {
   box-shadow: 5px 5px 4px lightgrey;
-  width: 30vw;
+  width: 40vw;
   display: inline-block;
 }
 

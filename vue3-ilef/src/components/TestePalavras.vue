@@ -50,32 +50,12 @@
 
 <script>
 import { store } from "@/store/storage";
+import conteudo from "@/assets/dados.json"
 export default {
   name: "TestePalavras",
   data() {
     return {
-      lista: [
-        "vai",
-        "uma",
-        "para",
-        "vovó",
-        "ela",
-        "ave",
-        "eu",
-        "dia",
-        "caiu",
-        "vaca",
-        "gato",
-        "pula",
-        "vila",
-        "pia",
-        "faca",
-        "lago",
-        "pipa",
-        "sala",
-        "sapo",
-        "pato",
-      ],
+      teste: conteudo,
       store,
     };
   },
@@ -84,6 +64,11 @@ export default {
       this.store.tipo = value;
     },
   },
+  computed: {
+    lista(){
+      return this.teste[this.store.dificuldade][this.store.tipo].lista;
+    }
+  }
 };
 </script>
 
@@ -101,7 +86,7 @@ export default {
 table {
   margin: 2em;
   padding: 1em;
-  font-size: 3vw;
+  font-size: 2vw;
   width: 90vw;
   height: 60vh;
   border: black dotted 1px;
@@ -110,7 +95,13 @@ table {
 h3 {
   text-align: center;
   font-size: larger;
-  margin-top: 1em;
+  font-family: Blorp;
+  font-size: 2.5vw;
+  color: #FEA800;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 #button-wrapper {
@@ -120,10 +111,10 @@ h3 {
 }
 
 button {
-  padding: 0.5em;
+  padding: 0.25em;
   margin-right: 7.5em;
   margin-bottom: 2.5em;
-  font-size: 2.5vw;
+  font-size: 2vw;
   font-family: Blorp;
 }
 </style>

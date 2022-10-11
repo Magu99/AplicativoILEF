@@ -1,8 +1,8 @@
 <template>
   <div>
     <!-- <TituloILEF /> -->
-    <TestePalavras v-if="store.tipo === 'Palavras'"/>
-    <TestePerguntas v-if="store.tipo === 'Leitura'" />
+    <TestePalavras v-if="store.tipo === 'palavras'"/>
+    <TestePerguntas v-if="store.tipo === 'leitura'" />
   </div>
 </template>
 
