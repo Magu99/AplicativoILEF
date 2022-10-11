@@ -11,9 +11,6 @@
 				"premissa":"Agora eu gostaria que você me recontasse essa história que acabou de ler. Conte para mim a história com o maior número de detalhes que você se lembrar.",
 				
 				"perguntas": [
-					"Gato Mimi",
-					"Mimi é o gato da tia Bia. Ele é peludo. Mimi pula e rola na cama todo dia. A tia Bia gosto muito de gato.",
-					"Agora eu gostaria que você me recontasse essa história que acabou de ler. Conte para mim a história com o maior número de detalhes que você se lembrar.",
 					"Quem é Mimi?",
 					"O que Mimi faz na cama da tia Bia todo dia?",
 					"Por que Mimi gosta de pular e rolar na cama?",
@@ -50,6 +47,147 @@
 				"foi", "sua", "galo", "fada", "bate", "carro", "lua",
 				"tatu", "dado", "cavalo", "bala", "rei", "comida", "nave"]
 			}
+		},
+        "1º ano":{
+			"texto":{
+				"titulo": "O bolo de fubá",
+				
+				"texto": "Todo dia, Edu vai na casa da vovó depois que sai da escola. No café da tarde, a vovó do Edu falou para ele que tinha feito um bolo de fubá muito bom e estava bem fofo. Edu logo pegou uma fatia de bolo e um copo de leite gelado para beber. O vovô estava sentado no sofá da sala e falou que queria uma fatia. Edu levou o bolo para o vovô e uma xícara de café. O vovô comeu todo o bolo e falou que estava muito bom. Os dois gostam muito do bolo que a vovó faz.",
+				
+				"premissa":"Agora eu gostaria que você me recontasse essa história que acabou de ler. Conte para mim a história com o maior número de detalhes que você se lembrar.",
+				
+				"perguntas": [
+					"Sobre o que é a estória?",
+					"Quem participa da estória?",
+					"O que a vovó fez para Edu comer?",
+					"Edu comeu o bolo e bebeu o que?",
+					"Que estava sentado no sofá da sala?",
+					"O que Edu levou para o vovô na sala?",
+					"O que vovô e Edu gostam que a Vovó faz?",
+					"Por que você acha que Edu vai todos os dias na casa da Vovó depois que sai da escola?",
+					"Por que você acha que Edu e o Vovô gostam tanto do bolo de fuba que a Vovó?",
+					"O que quer dizer 'o bolo está bem fofo'?"
+				]
+			},
+			
+			"palavras":{
+				"lista":["mais", "ele", "cada", "vamos", "menino", "todo",
+				"lado", "família", "bonito", "vida", "canta", "jogo", "barriga",
+				"mata", "mágico", "beijo", "doze", "palha", "loja", "fino"]
+			}
+		},
+        "2º ano":{
+			"texto":{
+				"titulo": "A cadela Bolinha",
+				
+				"texto": "A chegada da Bolinha na minha familia foi muito animada. Bolinha é uma cadela amarela e peluda que o papai achou na rua. No dia em que a bolinha chegou com o papai em casa, ele disse: - Vejam a cachorrinha linda que eu achei na rua! Vamos ficar com ela? - Podemos construir uma casa para ela, disse a mamãe. A cadelinha fez a maior festa e logo saltou no colo da mamãe. Depois, correu e ficou balançando o rabo para mim. Agora, ela já é da nossa familia. Nós também compramos ração para ela. Bolinha é a minha melhor amiga!",
+				
+				"premissa":"Agora eu gostaria que você me recontasse essa história que acabou de ler. Conte para mim a história com o maior número de detalhes que você se lembrar.",
+				
+				"perguntas": [
+					"Sobre o que é a estória?",
+					"Como a família recebeu a cachorrinha?",
+					"Como era a cadela Bolinha?",
+					"Quem encontrou a Bolinha?",
+					"Onde o papai achou a Bolinha?",
+					"O que a mamãe queria fazer para a Bolinha?",
+					"O que a família comprou para Bolinha?",
+					"Por que você acha que o Papai levou a Bolinha para casa?",
+					"Por que você acha que Bolinha ficou balançando o rabinho?",
+					"O que quer dizer 'saltou'?"
+				]
+			},
+			
+			"palavras":{
+				"lista":["cidade", "noite", "cachorro", "vento", "final", "coelho",
+				"galinha", "saúde", "avião", "fumaça", "quente", "ferro", "troca",
+				"verão", "grilo", "gelo", "jarra", "pomba", "favor", "filha"]
+				
+			}
+		},
+        "3º ano":{
+			"texto":{
+				"titulo": "O caminho da escola",
+				
+				"texto": "Todos os dias André e Mateus vão para a escola. A caminhada até lá dura mais ou menos vinte minutos. Não é muito perto, mas eles se divertem conversando pelo caminho. Passam por lojas e supermercado. Veem pessoas andando na rua e saindo do ônibus. No momento de atravessar a rua, André diz: - Calma! O sinal de pedestre está vermelho, temos que esperar, Mateus. Agora o sinal para os carros está amarelo, indicando atenção. - Finalmente o sinal para pedestre está verde, podemos ir. Avisa André. Os meninos conhecem bem os sinais de trânsito. Eles seguem conversando até chegarem na escola.",
+				
+				"premissa":"Agora eu gostaria que você me recontasse essa história que acabou de ler. Conte para mim a história com o maior número de detalhes que você se lembrar.",
+				
+				"perguntas": [
+					"Sobre o que é a estória?",
+					"Quanto tempo dura a caminhada até a escola?",
+					"O caminho até a escola é longe ou perto?",
+					"O que André e Mateus veem pelo caminho?",
+					"Por que eles tiveram que esperar para atravessar a rua?",
+					"Qual a cor do sinal que indicava atenção?",
+					"Qual a cor do sinal de pedestre André e Mateus puderam atravessar?",
+					"Por que é importante conhecer os sinais de trânsito?",
+					"Você acha que a escola fica em uma área rural ou na cidade?",
+					"O que quer dizer pedestre?"
+				]
+			},
+			
+			"palavras":{
+				"lista":["rural", "janela", "aparecem", "volta", "poesia", "alegre",
+				"principal", "floresta", "criação", "milho", "jeito", "vestido", "união",
+				"lixo", "estações", "coragem", "hino", "vara", "táxi", "boxe"] 
+			}
+		},
+        "4º ano":{
+			"texto":{
+				"titulo": "Um passeio interessante",
+				
+				"texto": "Luís acordou e estava radiante. Afinal ia passear no zoológico e no horto florestal no mesmo dia. Estava na expectativa para ver muitos animais e plantas diferentes. Mas o que ele queria mesmo era ver os macacos, que são primatas. No entanto, viu primeiro os anfibios. Ele não acreditou quando descobriu que algumas ras podem mudar de cor entre o dia e a noite. De repente ele avistou os chipanzés e ficou encantado ao vê-los andando eretos. Chegando no horto florestal viu lindas flores, orquídeas e bromélias. Ao refletir sobre o passeio, percebeu a importância de respeitar todos os seres-vivos.",
+				
+				"premissa":"Agora eu gostaria que você me recontasse essa história que acabou de ler. Conte para mim a história com o maior número de detalhes que você se lembrar.",
+				
+				"perguntas": [
+					"Sobre o que é a estória?",
+					"Por que o Luís acordou radiante?",
+					"Qual era o maior interesse de Luís ao visitar o zoológico?",
+					"O que Luís descobriu sobre as rãs?",
+					"Como os chimpanzés andavam?",
+					"O que Luís viu no Horto?",
+					"O que Luíz aprendeu ao final do passeio?",
+					"Por que você acha que ele aprendeu que é importante respeitar todos os seres vivos?",
+					"Por que você acha que Luís ficou encantado ao ver o Chimpanzé andando como humano?",
+					"O que quer dizer 'expectativa'?"
+				]
+			},
+			
+			"palavras":{
+				"lista":["observe", "vegetação", "distância", "fazia", "descobrir", "vermelho",
+				"feita", "poema", "capacidade", "indicam", "oxigênio", "exata", "cheiro",
+				"órgão", "certeza", "higiene", "chave", "trouxe", "lixeiro", "fixo"]
+			}
+		},
+        "5º ano":{
+			"texto":{
+				"titulo": "A evolução da internet",
+				
+				"texto": "No final do século XX a internet passou a fazer parte do cotidiano de milhões de pessoas. Foi uma revolução nos meios de comunicação. De repente, ficou muito fácil estabelecer conexões com pessoas do mundo inteiro e acessar qualquer tipo de informação. Isso era algo espetacular! No início, a velocidade da conexão era lenta e os equipamentos caríssimos. Hoje, com a tecnologia, é possível acessar a internet em milésimos de segundos. Os celulares possibilitam fazer ligações com vídeo em tempo real. Vale lembrar que é preciso usar essa ferramenta de forma sábia, ainda que estejam tão presentes em nossas vidas.",
+				
+				"premissa":"Agora eu gostaria que você me recontasse essa história que acabou de ler. Conte para mim a história com o maior número de detalhes que você se lembrar.",
+				
+				"perguntas": [
+					"Sobre o que é a estória?",
+					"Quando a Internet passou a fazer parte do cotidiano de milhões de pessoas?",
+					"Por que a Internet foi uma revolução nos meios de comunicação?",
+					"Como era a velocidade da Internet no início?",
+					"Atualmente, em quanto tempo podemos acessar a Internet?",
+					"De acordo com o texto, o que o celulares nos possibilitam realizar atualmente?",
+					"De que forma devemos usar a Internet atualmente?",
+					"De acordo com a sua opinião, o que você pensa sobre usar a Internet de forma sábia?",
+					"Por que ficou mais fácil estabelecer conexões com pessoas do mundo inteiro?",
+					"O que significa conexão?"
+				]
+			},
+			
+			"palavras":{
+				"lista":["sexto", "digestivo", "antecessor", "exploração", "hemisfério", "proteger",
+				"usava", "confusão", "vasilha", "trapézio", "extremos", "hexágono", "êxito",
+				"viçosa", "exosfera", "saxofone", "taxímetro", "vibração", "autêntico", "confere"]
+			}
 		}
 	}
-}
+}		
