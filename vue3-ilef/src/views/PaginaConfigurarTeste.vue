@@ -94,6 +94,12 @@ button {
   font-family: Blorp;
 }
 
+
+#reset-config-btn{
+  border: none;
+  background: none;
+}
+
 img{
   width: 3vw;
   padding-left: 0.25em;

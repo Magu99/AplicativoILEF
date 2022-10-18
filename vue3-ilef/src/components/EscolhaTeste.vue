@@ -11,13 +11,13 @@
         <tr id="wrapper">
           <td class="margem-da-folha"></td>
           <td>
-            <button id="leitura" @click="setTeste('Leitura')">Leitura de Texto</button>
+            <button id="leitura" @click="setTeste('leitura')">Leitura de Texto</button>
           </td>
         </tr>
         <tr id="wrapper">
           <td class="margem-da-folha"></td>
           <td>
-            <button id="palavras" @click="setTeste('Palavras')">
+            <button id="palavras" @click="setTeste('palavras')">
               Leitura de Palavras
             </button>
           </td>
